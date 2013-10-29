@@ -1,0 +1,18 @@
+diff -aurN mate-settings-daemon-1.6.1.orig/data/org.mate.font-rendering.gschema.xml.in.in mate-settings-daemon-1.6.1/data/org.mate.font-rendering.gschema.xml.in.in
+--- mate-settings-daemon-1.6.1.orig/data/org.mate.font-rendering.gschema.xml.in.in	2013-10-27 21:48:52.813812556 +0100
++++ mate-settings-daemon-1.6.1/data/org.mate.font-rendering.gschema.xml.in.in	2013-10-27 21:50:20.073165065 +0100
+@@ -23,12 +23,12 @@
+       <_description>The resolution used for converting font sizes to pixel sizes,  in dots per inch.</_description>
+     </key>
+     <key name="antialiasing" enum="org.mate.font-rendering.Antialiasing">
+-      <default>'grayscale'</default>
++      <default>'rgba'</default>
+       <_summary>Antialiasing</_summary>
+       <_description>The type of antialiasing to use when rendering fonts. Possible values are: "none" for no antialiasing, "grayscale" for standard grayscale antialiasing, and "rgba" for subpixel antialiasing (LCD screens only).</_description>
+     </key>
+     <key name="hinting" enum="org.mate.font-rendering.Hinting">
+-      <default>'medium'</default>
++      <default>'slight'</default>
+       <_summary>Hinting</_summary>
+       <_description>The type of hinting to use when rendering fonts. Possible values are: "none" for no hinting,  "slight" for basic, "medium" for moderate, and "full" for maximum hinting (may cause distortion of letter forms).</_description>
+     </key>
