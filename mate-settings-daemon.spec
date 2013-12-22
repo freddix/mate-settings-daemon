@@ -1,11 +1,11 @@
 Summary:	MATE Settings Daemon
 Name:		mate-settings-daemon
-Version:	1.6.1
-Release:	3
+Version:	1.6.2
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
-# Source0-md5:	a6a15afbb1ae264c9bf94c305316d53d
+# Source0-md5:	551b2c2204b67ee2ffc9d49051d35efb
 Patch0:		%{name}-freddix.patch
 URL:		http://wiki.mate-desktop.org/mate-settings-daemon
 BuildRequires:	autoconf
