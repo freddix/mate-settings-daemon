@@ -1,11 +1,11 @@
 Summary:	MATE Settings Daemon
 Name:		mate-settings-daemon
-Version:	1.6.2
+Version:	1.8.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
-# Source0-md5:	551b2c2204b67ee2ffc9d49051d35efb
+Source0:	http://pub.mate-desktop.org/releases/1.8/%{name}-%{version}.tar.xz
+# Source0-md5:	5a37759334596d97f9157c364a887d29
 Patch0:		%{name}-freddix.patch
 URL:		http://wiki.mate-desktop.org/mate-settings-daemon
 BuildRequires:	autoconf
@@ -13,7 +13,7 @@ BuildRequires:	automake
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext-devel
 BuildRequires:	mate-desktop-devel
-BuildRequires:	libmatekbd-devel
+BuildRequires:	libmatekbd-devel >= 1.8.0
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	libxklavier-devel
@@ -96,6 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/dbus-1/system.d/org.mate.SettingsDaemon.DateTimeMechanism.conf
 %{_sysconfdir}/xdg/autostart/mate-settings-daemon.desktop
 %{_iconsdir}/hicolor/*/*/*.*
+%{_mandir}/man1/mate-settings-daemon.1*
 
 %files devel
 %defattr(644,root,root,755)
